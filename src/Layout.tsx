@@ -28,7 +28,7 @@ const Layout = () => {
       <Footer />
       <div
         className={isCartVisible ? "cart open" : "cart"}
-        style={{ position: "absolute" }}
+        style={{ position: "absolute", backgroundColor: "none" }}
       >
         <Cart closeCart={closeCart} />
       </div>
