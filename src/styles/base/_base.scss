@@ -1,0 +1,52 @@
+a {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+body {
+  font-family: "Maison";
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: toRem(46);
+  line-height: toRem(55.2);
+}
+
+h2 {
+  font-size: toRem(40);
+  line-height: toRem(48);
+}
+
+h3 {
+  font-size: toRem(32);
+  line-height: toRem(40);
+}
+
+h4 {
+  font-size: toRem(24);
+  line-height: toRem(33.24);
+}
+
+h5 {
+  font-size: toRem(16);
+  line-height: toRem(24);
+  color: $primary-text-color;
+}
+
+h6 {
+  font-size: toRem(14);
+  line-height: toRem(20);
+  color: $primary-text-color;
+}
+
+p {
+  font-size: toRem(12);
+  line-height: toRem(16);
+  color: $primary-text-color;
+}
+
+#linethrough {
+  text-decoration: line-through;
+}

@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: toRem(72);
+  padding-right: toRem(72);
+  padding-top: toRem(40);
+  background-color: $secondary-bg-color;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    &__column {
+      padding: toRem(20);
+      display: flex;
+      flex-direction: column;
+      gap: toRem(20);
+      width: toRem(194);
+
+      &--title {
+        font-weight: 600;
+      }
+
+      &--lists {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(10);
+
+        a {
+          cursor: pointer;
+
+          p {
+            color: $small-text-color;
+          }
+        }
+      }
+    }
+
+    &__textInput {
+      display: flex;
+      align-self: flex-start;
+      width: toRem(480);
+
+      button {
+        padding: 14.5px 14px 14.5px 14px;
+        gap: 10px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+      }
+
+      input {
+        width: 80%;
+        background-color: $primary-button-color;
+        padding-top: toRem(15);
+        padding-bottom: toRem(15);
+        padding-left: toRem(12);
+        border: 1px solid #dddbdc;
+
+        ::placeholder {
+          font-size: 14px;
+          font-weight: 400;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(16);
+
+    &__links {
+      padding: toRem(0) toRem(99);
+      display: flex;
+      gap: toRem(24);
+      justify-content: center;
+
+      a {
+        p {
+          color: $small-text-color;
+        }
+      }
+    }
+
+    &__rights {
+      p {
+        color: $small-text-color;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../variables/colors";
+@import "../functions/pixelToRem";
+
+.subnavbar {
+  display: flex;
+  justify-content: center;
+  padding: 0 toRem(293);
+  border-bottom: 1px solid $navbar-border-color;
+
+  &__text {
+    padding: toRem(20) toRem(12);
+    cursor: pointer;
+    :hover {
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

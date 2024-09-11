@@ -1,0 +1,42 @@
+@import "../variables/colors";
+
+.navbar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $navbar-border-color;
+  align-items: center;
+  padding: 0 toRem(68);
+  &__links {
+    ul {
+      display: flex;
+
+      li {
+        padding: toRem(20) toRem(12);
+        border-bottom: 2px solid white;
+        cursor: pointer;
+      }
+
+      li:hover {
+        border-bottom: 2px solid black;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+
+  &__logo {
+    object-fit: cover;
+    padding-right: toRem(132);
+    cursor: pointer;
+  }
+
+  &__icons {
+    display: flex;
+
+    .navbar__icon:hover {
+      scale: 1.2;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

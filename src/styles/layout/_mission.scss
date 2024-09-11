@@ -1,0 +1,9 @@
+.mission {
+  display: flex;
+  justify-content: center;
+  padding: toRem(90) toRem(42);
+
+  img {
+    object-fit: cover;
+  }
+}

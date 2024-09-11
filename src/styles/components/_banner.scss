@@ -1,0 +1,30 @@
+.banner {
+  width: 100%;
+  background-color: black;
+  padding: 0 7px 0 7px;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &--text {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
