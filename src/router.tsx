@@ -5,6 +5,9 @@ import Landing from "./pages/Landing";
 
 import Product from "./pages/Product";
 import ProductDetails from "./pages/ProductDetails";
+import { ErrorBoundary } from "react-error-boundary";
+import About from "./pages/About";
+import Stores from "./pages/Stores";
 
 export const router = createBrowserRouter([
   {
@@ -16,27 +19,56 @@ export const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <p>From about</p>,
+        element: <About />,
       },
       {
         path: "/men",
-        element: <Product title="Men" category="men's clothing" />,
+        element: (
+          <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <Product title="Men" category="men's clothing" />,
+          </ErrorBoundary>
+        ),
       },
       {
         path: "/women",
-        element: <Product title="Women" category="women's clothing" />,
+        element: (
+          <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <Product title="Women" category="women's clothing" />,
+          </ErrorBoundary>
+        ),
       },
       {
         path: "/electronics",
-        element: <Product title="Electronics" category="electronics" />,
+        element: (
+          <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <Product title="Electronics" category="electronics" />,
+          </ErrorBoundary>
+        ),
       },
       {
         path: "/jewelery",
-        element: <Product title="Jewelery" category="jewelery" />,
+        element: (
+          <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <Product title="Jewelery" category="jewelery" />,
+          </ErrorBoundary>
+        ),
       },
       {
         path: "/products/:id",
-        element: <ProductDetails />,
+        element: (
+          <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <ProductDetails />,
+          </ErrorBoundary>
+        ),
+      },
+
+      {
+        path: "/stores",
+        element: (
+          <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <Stores />
+          </ErrorBoundary>
+        ),
       },
     ],
   },

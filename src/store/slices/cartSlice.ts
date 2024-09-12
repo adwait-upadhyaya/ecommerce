@@ -38,8 +38,8 @@ const cartSlice = createSlice({
           quantity: 1,
           totalPrice: action.payload.price,
         });
-        state.totalQuantity++;
       }
+      state.totalQuantity++;
       state.totalAmount += action.payload.price;
     },
     removeItem: (state, action: PayloadAction<{ id: number }>) => {

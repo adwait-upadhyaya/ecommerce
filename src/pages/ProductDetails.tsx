@@ -10,6 +10,9 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../store/slices/cartSlice";
 import Loading from "../components/Loader";
 
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const ProductDetails = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
@@ -43,11 +46,24 @@ const ProductDetails = () => {
       price: data!.price,
       totalPrice: data!.price,
     };
+    toast.success("Added to Cart", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
     dispatch(addItem(cartItem));
   };
 
   return (
     <>
+      <ToastContainer />
+
       <div className="details">
         <div className="details__left">
           <Image src={data?.image} width="412" height="508" />

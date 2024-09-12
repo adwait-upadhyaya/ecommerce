@@ -1,3 +1,4 @@
+import { ErrorBoundary } from "react-error-boundary";
 import Button from "../atoms/Button";
 import Text from "../atoms/Text";
 import CartItem from "../molecules/CartItem";
@@ -22,11 +23,28 @@ const Cart = (props: ICart) => {
         </div>
         <div className="cart__items">
           {items.map((item) => (
-            <CartItem key={item.id} {...item} />
+            <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+              <CartItem key={item.id} {...item} />
+            </ErrorBoundary>
           ))}
         </div>
         <div className="cart__total">
+          <Text type="h4">Subtotal</Text>
           <Text type="h4">Total: ${totalAmount.toFixed(2)}</Text>
+        </div>
+
+        <div className="cart__buttons">
+          <Button
+            type="secondary"
+            onClick={closeCart}
+            paddingX="124px"
+            paddingY="12px"
+          >
+            <Text type="h6" color="white">
+              CONTINUE TO CHECKOUT
+            </Text>
+          </Button>
+          <Text type="p">Psst, get it now before it sells out</Text>
         </div>
       </div>
     </>

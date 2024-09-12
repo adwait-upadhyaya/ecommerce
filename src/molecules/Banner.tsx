@@ -10,7 +10,6 @@ const Banner = () => {
   return (
     <>
       <div className="banner">
-        <div></div>
         <div className="banner__text">
           <div className="banner__text--bold">
             <Text type="p" color="white">

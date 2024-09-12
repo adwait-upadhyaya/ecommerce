@@ -1,6 +1,6 @@
 # E-Commerce App
 
-This is a fully functional e-commerce web application built using **React**, **TypeScript**, and **Sass**, with **Redux** for state management and **Redux Toolkit Query** for handling API calls. The app allows users to browse categories, add items to the cart, update quantities, and remove items, providing a seamless shopping experience.
+This is an e-commerce web application built using **React**, **TypeScript**, and **Sass**, with **Redux** for state management and **Redux Toolkit Query** for handling API calls. The app allows users to browse categories, add items to the cart, update quantities, and remove items, providing a seamless shopping experience.
 
 ## Features
 

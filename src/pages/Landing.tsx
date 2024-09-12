@@ -1,3 +1,4 @@
+import { ErrorBoundary } from "react-error-boundary";
 import Advertisement from "../layout/Advertisement";
 import Category from "../layout/Category";
 import HomeHero from "../layout/HomeHero";
@@ -7,7 +8,9 @@ const Landing = () => {
   return (
     <>
       <HomeHero />
-      <Category />
+      <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+        <Category />
+      </ErrorBoundary>
       <Advertisement />
       <Mission />
     </>
