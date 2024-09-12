@@ -23,7 +23,10 @@ const Cart = (props: ICart) => {
         </div>
         <div className="cart__items">
           {items.map((item) => (
-            <ErrorBoundary fallback={<div>Something Went Wrong</div>}>
+            <ErrorBoundary
+              fallback={<div>Something Went Wrong</div>}
+              key={item.id}
+            >
               <CartItem key={item.id} {...item} />
             </ErrorBoundary>
           ))}
