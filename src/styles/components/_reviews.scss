@@ -1,0 +1,27 @@
+.reviews {
+  display: flex;
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: toRem(195) toRem(221) toRem(136) toRem(221);
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__image {
+    padding-right: toRem(133);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

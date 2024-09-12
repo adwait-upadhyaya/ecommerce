@@ -1,0 +1,27 @@
+.everlane-favorite {
+  text-align: center;
+  padding: toRem(90) toRem(12);
+  overflow: scroll;
+  &__list {
+    margin-top: toRem(30);
+    display: flex;
+    justify-content: center;
+    gap: toRem(12);
+  }
+}
+.everlane-favorite-card {
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    &__about {
+      text-align: start;
+      max-width: toRem(243);
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      p:nth-child(2) {
+        color: $small-text-color;
+      }
+    }
+  }
+}
