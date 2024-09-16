@@ -1,3 +1,4 @@
+import Link from "../atoms/Link";
 import Image from "../atoms/Image";
 import Text from "../atoms/Text";
 
@@ -95,8 +96,10 @@ const About = () => {
             </div>
 
             <div className="card">
-              <Image src="images/stores.png" />
-              <Text type="h4">Our Stores</Text>
+              <Link url={"/stores"}>
+                <Image src="images/stores.png" />
+                <Text type="h4">Our Stores</Text>
+              </Link>
             </div>
 
             <div className="card">

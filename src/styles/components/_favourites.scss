@@ -1,7 +1,6 @@
 .everlane-favorite {
   text-align: center;
-  padding: toRem(90) toRem(12);
-  overflow: scroll;
+
   &__list {
     margin-top: toRem(30);
     display: flex;
@@ -10,6 +9,12 @@
   }
 }
 .everlane-favorite-card {
+  width: 20%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
   &__details {
     display: flex;
     justify-content: space-between;

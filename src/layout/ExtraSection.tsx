@@ -1,6 +1,6 @@
 import React from "react";
 import StaticImageSection from "../molecules/StaticImageSection";
-import FeatureSection from "../molecules/FeatureSection";
+
 import Link from "../atoms/Link";
 import Text from "../atoms/Text";
 
@@ -17,8 +17,6 @@ const ExtraSection: React.FC = () => {
       </header>
 
       <StaticImageSection />
-
-      <FeatureSection />
     </section>
   );
 };

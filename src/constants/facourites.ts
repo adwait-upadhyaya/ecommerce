@@ -2,7 +2,7 @@ import { IProduct } from "../interfaces/Favourite";
 
 export const everLaneFavorites: IProduct[] = [
   {
-    imageSrc: "/images/favorite1.png",
+    imageSrc: "public/images/favourite1.png",
     title: "The Waffle Long-Sleeve Crew",
     price: 60,
     color: "Bone",

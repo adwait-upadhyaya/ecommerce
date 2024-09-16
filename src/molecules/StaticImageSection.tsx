@@ -12,17 +12,14 @@ const images = [
 const StaticImageSection: React.FC = () => {
   return (
     <div className="static-images">
+      <Image src="/images/CaretLeft.png" />
+
       {images.map((image, index) => (
         <div key={index} className="static-images__item">
-          <Image
-            src={image}
-            alt={`Static Image ${index + 1}`}
-            width="225px"
-            height="225px"
-          />
-          <div className="static-images__icon"></div>
+          <Image src={image} alt={`Static Image ${index + 1}`} />
         </div>
       ))}
+      <Image src="/images/CaretRight.png" />
     </div>
   );
 };

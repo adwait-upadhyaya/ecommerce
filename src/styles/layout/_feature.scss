@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  gap: toRem(6);
+  justify-content: center;
+  &__card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20);
+    justify-content: center;
+    align-items: center;
+    &__image {
+      height: 4.875rem;
+      width: 4.875rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+    }
+  }
+}
+
+.bold {
+  font-weight: 600;
+}

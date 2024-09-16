@@ -4,7 +4,7 @@ const Mission = () => {
   return (
     <>
       <div className="mission">
-        <Image src={missionImage} height="281" width="92%" />
+        <Image src={missionImage} height="281" width="100%" />
       </div>
     </>
   );
